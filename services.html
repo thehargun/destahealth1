@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Health Services - Desta Health</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]>
+    <style>
+        .service-box {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            height: 150px; /* You can adjust the height as needed */
+            transition: background-color 0.3s;
+        }
+
+        .service-box:hover {
+            background-color: white;
+        }
+
+        @media screen and (max-width: 980px) {
+            .service-box {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 981px) {
+            .service-box {
+                width: calc(33.33% - 20px); /* 3 boxes in a row with margin in between */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+<header id="header">
+    <h1><a href="index.html">Desta Health</a></h1>
+    <nav id="nav">
+        <ul>
+            <li class="special">
+                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- Main -->
+    <article id="main">
+        <header>
+            <h2 style="text-align: center;">How do we support you?</h2>
+        </header>
+        <section class="wrapper style5">
+            <div class="inner">
+                <section>
+                    <div class="row">
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Strategic Vision</h4>
+                                <p class="service-info">Building your strategic vision</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Recruiting</h4>
+                                <p class="service-info">Friendlier and simpler recruitment</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Revenue Cycle</h4>
+                                <p class="service-info">Coming soon</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Engagement Center</h4>
+                                <p class="service-info">Coming soon</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Medical Supervision</h4>
+                                <p class="service-info">Coming soon</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Growth Financing</h4>
+                                <p class="service-info">Tailored financing opportunities that work.</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Real Estate</h4>
+                                <p class="service-info">Increase your locations</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Equity Investing</h4>
+                                <p class="service-info">Find the appropriate partners</p>
+                            </div>
+                        </div>
+                        <div class="3u 12u$(medium)">
+                            <div class="service-box">
+                                <h4>Marketing and Outreach</h4>
+                                <p class="service-info">Building pathways into the communities</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>Don’t see what you need help with?</h4>
+                    <p>Let’s talk and see if we can find a path to facilitate your needs (or at least help you find the right partner!).</p>
+                    <p><a href="mailto:hello@destahealth.com">Hello@DestaHealth.com</a></p>
+                </section>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    // JavaScript to show service information on hover
+    const serviceBoxes = document.querySelectorAll('.service-box');
+
+    serviceBoxes.forEach((box) => {
+        const serviceInfo = box.querySelector('.service-info');
+        serviceInfo.style.display = 'none'; // Initially hide the service info
+        box.addEventListener('mouseenter', () => {
+            serviceInfo.style.display = 'block';
+        });
+        box.addEventListener('mouseleave', () => {
+            serviceInfo.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
